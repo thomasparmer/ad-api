@@ -1,0 +1,11 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+         google:
+            clientId: <set from run configuration -Dspring.security.oauth2.client.registration.google.client-id>
+            clientSecret: <set from run configuration -Dspring.security.oauth2.client.registration.google.client-secret>
+            authorization-grant-type: authorization_code
+            scope:
+              - profile
